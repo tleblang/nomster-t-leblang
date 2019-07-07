@@ -1,4 +1,6 @@
 @import "bootstrap";
+@import "font-awesome";
+
 
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -28,10 +30,13 @@ body {
 }
 
 .navbar-inverse .navbar-brand {
-  color: #E3E85A;
+  color: green;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 600;
   letter-spacing: -0.3px;
 }
 
+.nav-item{
+  
+}
 
