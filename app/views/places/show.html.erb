@@ -23,14 +23,14 @@
       }
     </script>
 
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5cQ6NNJ0wrTkdk_hH6CUCeoBKzvmJNo0&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GEOCODER_API_KEY'] %>  &callback=initMap">
+
     </script>
 
     <div id="map"></div>
   <% end %>
   <br/>
-  
+
   <div class="float-right">
     <% if current_user && current_user == @place.user %>
       <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
