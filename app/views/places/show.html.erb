@@ -45,8 +45,8 @@
 <div class="clear"></div>
 
 <div class="col-10 offset-1">
-  <h2 class="float-left">show photos</h2>
-<!-- Button trigger a comment modal -->
+  <h1><%= link_to 'Show Photos', place_photo_path(@place), class: 'float-left'%></h1><br />
+<!-- Button trigger a photo modal -->
   <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#addPhotosModal">
     Add photos
   </button>

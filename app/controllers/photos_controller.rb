@@ -6,6 +6,10 @@ class PhotosController < ApplicationController
     redirect_to place_path(@place)
   end
 
+  def show
+    @place = Place.find(params[:place_id])
+  end
+
   private
 
   def photo_params
