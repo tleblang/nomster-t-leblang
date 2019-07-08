@@ -42,16 +42,12 @@
           <b><%= photo.caption %></b> 
           <br/>
       <% end %> 
-
       <!-- show uploaded pictures here -->
       <div>
         <% photo.pictures.each do |p| %>
-        <%= p.url %><br/>
           <%= image_tag(p.url, class: 'photo-box') %>
         <% end %>
       </div>
-   
   <% end %>
- 
 </div>
 
