@@ -115,6 +115,7 @@
       <div class="modal-body">
         <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
           <%= f.input :caption %>
+          <%= f.file_field :pictures, multiple: true %>
           <%= f.submit "Add Photos", class: 'btn btn-primary' %>
         <% end %>
       </div>
